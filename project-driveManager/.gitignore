@@ -1,0 +1,50 @@
+# Binários e artefatos de build
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Diretórios de build
+/bin/
+/dist/
+/build/
+
+# Dependências (módulos Go usam go.mod/go.sum; vendor só se versionado)
+/vendor/
+
+# Testes e cobertura
+*.cover
+*.coverprofile
+coverage.out
+coverage.html
+profile.cov
+
+# Ferramentas e cache
+.cache/
+*.prof
+*.pprof
+
+# IDEs e editores
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Variáveis de ambiente e segredos
+.env
+.env.*
+!.env.example
+infra/credentials.json
+
+# Debug e logs
+debug
+*.log
+
+# Air (live reload) — opcional
+tmp/
